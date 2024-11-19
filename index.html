@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+       
+        <div class="toggle-btn" id="toggleBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!--MOBILE SCREEN NAVBAR-->
+
+    <div class="side-nav" id="sideNav">
+        <button class="close-btn" id="closeSideNavBtn">&times;</button>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Works</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!--HOME SECTION-->
+
+    <section class="home-section night-mode" id="home">
+        <div class="content">
+            <h1>
+                <span>Hey!<b class="wave">👋</b> I'm Nibras, a</span>
+                <span class="highlight">Full Stack Developer</span>
+                <span>based in kerala.</span>
+            </h1>
+            <p>Web development is my playground.</p>
+            <div class="buttons">
+                <a href="#work"><button class="btn btn-primary">View My projects →</button></a>
+                <a href="https://drive.google.com/file/d/1L2XfZGCdxwcrECkCveWflhjiTH2bIr4x/view" target="_blank"><button class="btn btn-secondary">View My Resume →</button></a>
+            </div>
+        </div>
+        <div class="icon">
+            <img src="#" alt="Icon">
+        </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">Technologies</h2>
+        <div class="skills-buttons">
+            <button class="skill-btn active" data-category="all">All</button>
+            <button class="skill-btn" data-category="frontend">Front-End</button>
+            <button class="skill-btn" data-category="backend">Back-End</button>
+            <button class="skill-btn" data-category="devops">DevOps</button>
+            <button class="skill-btn" data-category="database">Database</button>
+            <button class="skill-btn" data-category="mobileapp">Mobile App Dev</button>
+        </div>
+        <div class="skills-content">
+            <!-- Add your tech items here -->
+            <!--FRONT-END-->
+            <div class="tech-item" data-category="frontend">
+                <img src="images/html5.svg" alt="html">
+                <p>HTML</p>
+            </div>
+            <div class="tech-item" data-category="frontend">
+                <img src="images/css3.svg" alt="css">
+                <p>CSS</p>
+            </div>
+            <div class="tech-item" data-category="frontend">
+                <img src="images/bootstrap.svg" alt="bootstrap">
+                <p>BOOTSTRAP</p>
+            </div>
+            <div class="tech-item" data-category="frontend">
+                <img src="images/javascript (2).svg" alt="javascript">
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="tech-item" data-category="frontend">
+                <img src="images/typescript (2).svg" alt="typescript">
+                <p>TYPESCRIPT</p>
+            </div>
+            <div class="tech-item" data-category="frontend">
+                <img src="images/react.svg" alt="react">
+                <p>REACT</p>
+            </div>
+            <div class="tech-item" data-category="frontend">
+              <img src="images/sass.svg" alt="sass">
+              <p>SASS</p>
+          </div>
+            <!--BACK-END-->
+            <div class="tech-item" data-category="backend">
+                <img src="images/python.svg" alt="python">
+                <p>PYTHON</p>
+            </div>
+            <div class="tech-item" data-category="backend">
+                <img src="images/djangoproject.svg" alt="django">
+                <p>DJANGO</p>
+            </div>
+            <div class="tech-item" data-category="backend">
+              <img src="images/nodejs.svg" alt="node.js">
+              <p>NODE.JS</p>
+          </div>
+            <!--DEVOPS-->
+            <div class="tech-item" data-category="devops">
+                <img src="images/docker (2).svg" alt="docker">
+                <p>DOCKER</p>
+            </div>
+            <div class="tech-item" data-category="devops">
+                <img src="images/git (2).svg" alt="git">
+                <p>GIT</p>
+            </div>
+            <div class="tech-item" data-category="devops">
+                <img src="images/npm.svg" alt="npm">
+                <p>NPM</p>
+            </div>
+            <div class="tech-item" data-category="devops">
+                <img src="images/github (2).svg" alt="github">
+                <p>GITHUB</p>
+            </div>
+            <!--DATABASE-->
+            <div class="tech-item" data-category="database">
+                <img src="images/mysql (2).svg" alt="mysql">
+                <p>MYSQL</p>
+            </div>
+            <div class="tech-item" data-category="database">
+                <img src="images/postgresql (2).svg" alt="postgresql">
+                <p>POSTGRESQL</p>
+            </div>
+            <!--MOBILE APP DEV-->
+            <div class="tech-item" data-category="mobileapp">
+                <img src="images/react-native.svg" alt="react native">
+                <p>REACT NATIVE</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- ABOUT SECTION -->
+
+    <section id="about">
+        <div class="aboutMe">
+            <div class="aboutMeTitle">
+            <h1>About Me</h1>
+            </div>
+            <div class="aboutMeMain">
+               <div class="about-image"></div>
+               <p class="about-paragraph">
+                Hello, my name is Muhammed Nibras. I hold a Bachelor’s degree in Computer Applications and have a strong passion for web development. I specialize in building web applications, leveraging modern frontend technologies like React.js and robust backend frameworks such as Python Django. With a keen eye for detail and a drive for excellence, I aim to create innovative, user-friendly solutions that meet the demands of the tech-driven world. I am continuously learning and enhancing my skills to stay ahead in the dynamic field of web development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--PROJECT SECTION-->
+
+    <div class="wrapper">
+        <section id="work" class="work-section">
+          <h1 class="section-title">Works</h1>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/Foodies_website.png" alt="Foodies_website">
+            </div>
+            <div class="work-content">
+              <h2>Welcome to Foodies</h2>
+              <p>
+                Foodies is your ultimate destination for discovering and sharing delicious recipes.
+                Whether you're a novice in the kitchen or a seasoned chef, we have something for everyone!
+              </p>
+              <p>
+                Explore our curated collection of dishes from all around the world, and find your next
+                favorite meal to cook or share with friends and family.
+              </p>
+              <p>Tech Stack: React | Javascript | Sass </p>
+              <a href="https://nibras19.github.io/Foodies/" target="_blank" class="view-project">Check Live Site ↗</a>
+              <a href="https://github.com/NIBRAS19/Foodies" target="_blank" class="view-project">View Code ↗</a>
+            </div>
+          </div>
+          <div class="work-item reverse">
+            <div class="work-image">
+              <img src="images/TaskTrack-webapp.png" alt="TaskTrack-webapp">
+            </div>
+            <div class="work-content">
+              <h2>Kanban Board Web Application</h2>
+              <p>
+                A dynamic task management application built with React and styled with CSS. This Kanban board allows users to easily organize tasks by moving them between different stages such as "To-Do", "In Progress", and "Done". The app features drag-and-drop functionality and stores tasks locally using the browser's local storage, making sure data is preserved even after a page refresh.
+            </p>
+            <p>
+                The project utilizes the `react-beautiful-dnd` library for a seamless drag-and-drop experience, allowing for intuitive task management. It is a fully responsive and modern web application, suitable for both personal and team-based task tracking.
+            </p>
+              <p>Tech Stack: React | Javascript | CSS</p>
+              <a href="https://nibras19.github.io/TaskTrack/" target="_blank" class="view-project">Check Live Site ↗</a>
+              <a href="https://github.com/NIBRAS19/TaskTrack" target="_blank" class="view-project">View Code ↗</a>
+            </div>
+          </div>
+          <div class="work-item">
+            <div class="work-image">
+              <img src="images/portfolio-website.png" alt="portfolio-website">
+            </div>
+            <div class="work-content">
+              <h2>Welcome to My Portfolio</h2>
+              <p> This is a place where I showcase my work, projects, and skills. Feel free to explore my journey as a software developer.</p>
+              <p>I specialize in full-stack development, including React, Django, and other modern web technologies. Let's build something amazing together!</p>
+              <p>Tech Stack: Html | Css | Javascript | Gsap</p>
+              <a href="https://nibras19.github.io/Portfolio/" target="_blank" class="view-project">Check Live Site ↗</a>
+              <a href="https://github.com/NIBRAS19/Portfolio" target="_blank" class="view-project">View Code ↗</a>
+            </div>
+          </div>
+          <div class="view-all-wrapper">
+            <a href="https://github.com/NIBRAS19?tab=repositories" target="_blank" class="view-all">View All Works</a>
+          </div>
+        </section>
+      </div>
+
+      <!--CONTACT SECTION-->
+
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <h2 class="contact-title">CONTACT</h2>
+          <p class="contact-subtitle">Get in touch! <span class="cursor">👇</span></p>
+          <p class="contact-paragraph">I'm actively looking for any new opportunities, my inbox is always open. Whether you have a question or want to hire me or just want to say hello, I'll try my best to get back to you!</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <a href="https://www.google.com/maps/place/india,+kerala" target="_blank">
+                <div class="contact-icon">
+                  <img src="images/location-50.png" alt="Location Icon">
+                </div>
+              </a>
+              <div>
+                <h3>Location</h3>
+                <p><a href="https://www.google.com/maps/place/india,+kerala" target="_blank">india, kerala</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <a href="mailto:mhd.nibras.19@gmail.com">
+                <div class="contact-icon">
+                  <img src="images/email-50.png" alt="Email Icon">
+                </div>
+              </a>
+              <div>
+                <h3>Mail</h3>
+                <p><a href="mailto:mhd.nibras.19@gmail.com">mhd.nibras.19@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <a href="https://www.linkedin.com/in/nibras-k-6765b32a4/" target="_blank">
+                <div class="contact-icon">
+                  <img src="images/linkedin-50.png" alt="LinkedIn Icon">
+                </div>
+              </a>
+              <div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/nibras-k-6765b32a4/" target="_blank">nibras-k</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <a href="https://github.com/NIBRAS19" target="_blank">
+                <div class="contact-icon">
+                  <img src="images/github-50.png" alt="GitHub Icon">
+                </div>
+              </a>
+              <div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/NIBRAS19" target="_blank">NIBRAS19</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    
+    <footer>
+      <div class="footer-container">
+          <p class="footer-copy">&copy; 2024 Nibras. All Rights Reserved.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/nibras-k-6765b32a4/" target="_blank">
+                <img src="images/linkedin (2).png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/NIBRAS19" target="_blank">
+                <img src="images/social.png" alt="GitHub">
+            </a>
+            <a href="mailto:mhd.nibras.19@gmail.com">
+                <img src="images/email.png" alt="Email">
+            </a>
+        </div>
+      </div>
+  </footer>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
